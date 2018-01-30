@@ -42,9 +42,11 @@ html, body {
 }
 
 .content {
+  width: 100%;
   max-width: 650px;
   margin: 0 auto;
   padding: 0 15px;
+  transition: .2s;
 }
 
 .footer-container{
@@ -54,3 +56,27 @@ html, body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+@media @laptopMd {
+  .container-bg {
+    padding: 65px 0 80px;
+  }
+  .content {
+    max-width: 570px;
+  }
+}
+@media @laptop {
+  .content {
+    max-width: 520px;
+  }
+}
+@media @laptopSm {
+  .content {
+    max-width: 480px;
+  }
+}
+@media @tablet {}
+@media @mobileLg {}
+@media @mobileMd {}
+@media @mobile {}
+@media @mobileSm {}

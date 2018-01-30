@@ -1,5 +1,6 @@
 .header{
 	padding-bottom: 70px;
+	transition: .2s;
 }
 
 .logo-container{
@@ -16,3 +17,31 @@
 	.font-size(38);
 	font-weight: 500;
 }
+
+@media @laptopLg {}
+@media @laptopMd {
+	.header{
+		padding-bottom: 50px;
+	}
+}
+@media @laptop {
+	.header{
+		padding-bottom: 40px;
+	}
+	.logo-img{
+		max-width: 180px;
+	}
+}
+@media @laptopSm {
+	.header{
+		padding-bottom: 20px;
+	}
+	.logo-img{
+		max-width: 160px;
+	}
+}
+@media @tablet {}
+@media @mobileLg {}
+@media @mobileMd {}
+@media @mobile {}
+@media @mobileSm {}

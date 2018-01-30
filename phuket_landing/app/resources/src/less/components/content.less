@@ -1,13 +1,49 @@
 .apps-container {
 	padding-top: 70px;
 	padding-bottom: 45px;
+	transition: .2s;
 }
 
 .apps-item {
 	margin-right: 30px;
-	width: 222px;
+	width: 220px;
+
+	.apps-badge {
+		width: 100%;
+	}
 
 	&:last-child {
 		margin-right: 0;
 	}
 }
+
+@media @laptopLg {}
+@media @laptopMd {
+	.apps-container {
+		padding-top: 50px;
+		padding-bottom: 35px;
+	}
+}
+@media @laptop {
+	.apps-container {
+		padding-top: 40px;
+	}
+	.apps-item {
+		width: 180px;
+	}
+}
+@media @laptopSm {
+	.apps-container {
+		padding-top: 20px;
+	}
+	.apps-item {
+		margin-right: 20px;
+		width: 165px;
+	}
+}
+@media @tablet {
+}
+@media @mobileLg {}
+@media @mobileMd {}
+@media @mobile {}
+@media @mobileSm {}
