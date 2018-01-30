@@ -35,10 +35,12 @@ html, body {
 
 .container-bg {
   padding: 75px 0 95px;
-  background-image: url('/src/img/dsg/bg-main.png');
+  background-color: @color_green;
+  background-image: url('/src/img/dsg/backgrounds/bg-1920.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: .2s;
 }
 
 .content {
@@ -66,6 +68,9 @@ html, body {
   }
 }
 @media @laptop {
+  .container-bg {
+    background-image: url('/src/img/dsg/backgrounds/bg-1200.png');
+  }
   .content {
     max-width: 520px;
   }
@@ -75,8 +80,19 @@ html, body {
     max-width: 480px;
   }
 }
-@media @tablet {}
-@media @mobileLg {}
-@media @mobileMd {}
-@media @mobile {}
-@media @mobileSm {}
+@media @tablet {
+  .container-bg {
+    background-image: url('/src/img/dsg/backgrounds/bg-992.png');
+  }
+}
+@media @mobileLg {
+  .container-bg {
+    padding: 50px 0 60px;
+    background-image: url('/src/img/dsg/backgrounds/bg-768.png');
+  }
+}
+@media @mobile {
+  .container-bg {
+    background-image: url('/src/img/dsg/backgrounds/bg-480.png');
+  }
+}

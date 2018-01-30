@@ -9,16 +9,18 @@
 .logo-img{
 	width: 100%;
 	max-width: 200px;
+	transition: .2s;
 }
 
 .heading {
 	margin-top: 35px;
+	font-family: "Helvetica Neue Cyr", "Arial", sans-serif;
 	text-align: center;
 	.font-size(38);
 	font-weight: 500;
+	transition: .2s;
 }
 
-@media @laptopLg {}
 @media @laptopMd {
 	.header{
 		padding-bottom: 50px;
@@ -40,8 +42,19 @@
 		max-width: 160px;
 	}
 }
-@media @tablet {}
-@media @mobileLg {}
-@media @mobileMd {}
-@media @mobile {}
-@media @mobileSm {}
+@media @tablet {
+	.heading {
+		.font-size(34);
+	}
+}
+@media @mobileLg {
+	.header{
+		padding-bottom: 15px;
+	}
+	.logo-img{
+		max-width: 130px;
+	}
+	.heading {
+		.font-size(30);
+	}
+}
